@@ -63,6 +63,7 @@ Delete user by Id ( DELETE)
 2.	SSH into EC2 instance with key file.
 
 3.	Install all update and java 11
+
 		$ sudo yum update
 		$sudo amazon-linux-extras install java-openjdk11
 		$sudo yum remove java-1.7.0-openjdk
@@ -74,7 +75,8 @@ Delete user by Id ( DELETE)
 
 This should start up application and run it in the background. The application should now be running at instances public DNS on port 8080. 
 
-6.	When you wish to stop your application you can bring it to the foreground and kill it with the following commands.
+6.	When wish to stop  application you can bring it to the foreground and kill it with the following commands.
+
 		Jobs Fg %JOB_NAME
 		Control-c
 
