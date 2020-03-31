@@ -33,16 +33,17 @@
 2.	Use template files.
 3.	Modify application.properties under Spring Project’s src/main/resources
 
-spring.datasource.url=jdbc:mysql:// RDS Endpoint :3306/ credit_card_db spring.datasource.username=master name
-spring.datasource.password=master password
-spring.datasource.driver-class-name=com.mysql.cj.jdbc.Driver
+		spring.datasource.url=jdbc:mysql:// RDS Endpoint :3306/ credit_card_db 
+		spring.datasource.username=master name
+		spring.datasource.password=master password
+		spring.datasource.driver-class-name=com.mysql.cj.jdbc.Driver
 
 4.	Open the pom.xml and add the following dependency element to the existing dependencies
-<dependency>
-<groupId>mysql</groupId>
-<artifactId>mysql-connector-java</artifactId>
-<scope>runtime</scope>
-</dependency>
+		<dependency>
+		<groupId>mysql</groupId>
+		<artifactId>mysql-connector-java</artifactId>
+		<scope>runtime</scope>
+		</dependency>
 5.	This project is using JDBC. Thus needs to develop JDBC controller, JDBC repository, JDBC application, user bean for following 4 REST API:
 Show all users (GET)
 Show user by ID (GET)
@@ -62,18 +63,18 @@ Delete user by Id ( DELETE)
 2.	SSH into EC2 instance with key file.
 
 3.	Install all update and java 11
-	$ sudo yum update
-$sudo amazon-linux-extras install java-openjdk11
-$sudo yum remove java-1.7.0-openjdk
+		$ sudo yum update
+		$sudo amazon-linux-extras install java-openjdk11
+		$sudo yum remove java-1.7.0-openjdk
 
 4.	Upload local Spring Jar file to EC2 instance
 5.	SSH back into EC2 instance and run the following command to start up spring application:
 
-Java -jar Spring_FILE.jar
+		Java -jar Spring_FILE.jar
 
 This should start up application and run it in the background. The application should now be running at instances public DNS on port 8080. 
 
 6.	When you wish to stop your application you can bring it to the foreground and kill it with the following commands.
-Jobs Fg %JOB_NAME
-Control-c
+		Jobs Fg %JOB_NAME
+		Control-c
 
