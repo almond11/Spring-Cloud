@@ -49,11 +49,13 @@
 		spring.datasource.driver-class-name=com.mysql.cj.jdbc.Driver
 
 4.	Open the pom.xml and add the following dependency element to the existing dependencies
+
 		<dependency>
 		<groupId>mysql</groupId>
 		<artifactId>mysql-connector-java</artifactId>
 		<scope>runtime</scope>
 		</dependency>
+		
 5.	This project is using JDBC. Thus needs to develop JDBC controller, JDBC repository, JDBC application, user bean for following 4 REST API:
 * Show all users (GET)
 * Show user by ID (GET)
