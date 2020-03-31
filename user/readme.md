@@ -14,18 +14,18 @@
 1.	Install, Configure, and Start MySQL Workbench, Connected to RDS with master name and password.
 2.	Create database in Wrokbench:
 
-'''sql
-CREATE DATABASE credit_card_db;
 
-USE credit_card_db;
+		CREATE DATABASE credit_card_db;
 
-- CREATE TABLE IF NOT EXISTS user_info (
-- user_id INT AUTO_INCREMENT PRIMARY KEY,
-- first_name VARCHAR(255) NOT NULL,
-- last_name VARCHAR(255) NOT NULL,
-- addr VARCHAR(255),
-- email VARCHAR(50),
-- );
+		USE credit_card_db;
+
+		CREATE TABLE IF NOT EXISTS user_info (
+		user_id INT AUTO_INCREMENT PRIMARY KEY,
+		first_name VARCHAR(255) NOT NULL,
+		last_name VARCHAR(255) NOT NULL,
+		addr VARCHAR(255),
+		email VARCHAR(50),
+		);
 
 # Develop/ Integrate Spring Boot with MySQL
 1.	Install Maven, Spring Tool Suite (STS)
