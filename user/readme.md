@@ -1,3 +1,6 @@
+## This is simple SPRING MVC project on cloud in which I have used Spring MVC, JDBC Templates for data manipulation , at database side I have used MYSQL database provided by AWS RDS ( Relational Database Service). The Spring application is hosted on AWS EC2.
+
+
 # Create a Remote MySQL Instance on AWS
 1.	Login to the Amazon AWS console and select RDS .
 
