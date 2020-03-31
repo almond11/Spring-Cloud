@@ -14,9 +14,10 @@
 1.	Install, Configure, and Start MySQL Workbench, Connected to RDS with master name and password.
 2.	Create database in Wrokbench:
 
-- CREATE DATABASE credit_card_db;
+'''javascript
+CREATE DATABASE credit_card_db;
 
-- USE credit_card_db;
+USE credit_card_db;
 
 - CREATE TABLE IF NOT EXISTS user_info (
 - user_id INT AUTO_INCREMENT PRIMARY KEY,
