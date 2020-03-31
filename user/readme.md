@@ -1,4 +1,4 @@
-#### This is simple SPRING MVC project on cloud in which I have used Spring MVC, JDBC Templates for data manipulation , at database side I have used MYSQL database provided by AWS RDS ( Relational Database Service). The Spring application is hosted on AWS EC2.
+#### This is simple Spring project on Cloud in which I have used Spring MVC, JDBC Templates for data manipulation , at database side I used MYSQL database provided by AWS RDS ( Relational Database Service). The Spring application is hosted on AWS EC2.
 #### This application supports 4 API:
 * search all users
 * search one user by Id
