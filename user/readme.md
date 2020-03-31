@@ -1,11 +1,13 @@
 # Create a Remote MySQL Instance on AWS
 1.	Login to the Amazon AWS console and select RDS .
 
-2.	Launch to add a new RDS instance, with engine type ,use case Dev/Test – MySQL,  DB instance class db.t2.micro.
+2.	Launch to add a new RDS instance, with engine type MySQL ,use case Dev/Test – MySQL,  DB instance class db.t2.micro.
 
-3.	Set up and remember own master username and password. Enable Public accessibility . Configure security group to allow access from EC2.
+3.	Set up and remember own master username and password. 
 
-4.	Write down RDS Endpoint and Port Number 3306
+4.  Enable Public accessibility . Configure security group to allow access from EC2.
+
+5.	Write down RDS Endpoint and Port Number 3306
 
  
 
@@ -45,10 +47,10 @@
 		<scope>runtime</scope>
 		</dependency>
 5.	This project is using JDBC. Thus needs to develop JDBC controller, JDBC repository, JDBC application, user bean for following 4 REST API:
-Show all users (GET)
-Show user by ID (GET)
-Create new user (POST)
-Delete user by Id ( DELETE)
+* Show all users (GET)
+* Show user by ID (GET)
+* Create new user (POST)
+* Delete user by Id ( DELETE)
 
 6.	Test locally at localhost:8080
 7.	Build jar with Maven.
@@ -60,7 +62,7 @@ Delete user by Id ( DELETE)
 1.	Create Amazon Linux 2 AMI (HVM), SSD Volume Type with instance size of t2.micro, 8GB volume, Security Group accepting internet traffic. 
  
 
-2.	SSH into EC2 instance with key file.
+2.	SSH into EC2 instance with private key file.
 
 3.	Install all update and java 11
 
