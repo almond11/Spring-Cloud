@@ -1,4 +1,4 @@
-#Create a Remote MySQL Instance on AWS
+*Create a Remote MySQL Instance on AWS
 1.	Login to the Amazon AWS console and select RDS .
 
 2.	Launch to add a new RDS instance, with engine type ,use case Dev/Test – MySQL,  DB instance class db.t2.micro.
@@ -10,7 +10,7 @@
  
 
 
-#Create a User Database in MySQL Instance on AWS
+*Create a User Database in MySQL Instance on AWS
 1.	Install, Configure, and Start MySQL Workbench, Connected to RDS with master name and password.
 2.	Create database in Wrokbench:
 
@@ -25,7 +25,7 @@ addr VARCHAR(255),
 email VARCHAR(50),
 );
 
-#Develop/ Integrate Spring Boot with MySQL
+*Develop/ Integrate Spring Boot with MySQL
 1.	Install Maven, Spring Tool Suite (STS)
  
 2.	Use template files.
@@ -52,7 +52,7 @@ Delete user by Id ( DELETE)
  
 
 
-#Deploy Spring Boot Web Application to AWS (EC2)
+*Deploy Spring Boot Web Application to AWS (EC2)
 
 1.	Create Amazon Linux 2 AMI (HVM), SSD Volume Type with instance size of t2.micro, 8GB volume, Security Group accepting internet traffic. 
  
